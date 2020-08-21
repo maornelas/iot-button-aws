@@ -4,14 +4,13 @@ const SNS = new AWS.SNS({ apiVersion: '2010-03-31' });
 
 /** 
    * Use comas después de cada número excepto para el último número.
-   * Para MEXICO son 10 digitos
-   * Para USA son 11 digitos empezando con "1"
+   * Para MEXICO +52+ 10 digitos
    */
 
 const PHONE_NUMBER_ARRAY = [
-    "2223331111", 
-    "2223332222", 
-    "2223333333"  
+    "+522223331111", 
+    "+522223332222", 
+    "+522223333333"  
 ]; 
 
 /** Definiendo los mensajes para los 3 tipos de click del IoT Button AWS*/
